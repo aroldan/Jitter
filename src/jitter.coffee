@@ -137,7 +137,7 @@ compileScript= (source, target, options) ->
     else
       puts 'Compiled '+ source
   catch err
-    puts err.message
+    puts "#{source}: #{err.message}"
     notify source, err.message
 
 jsPath= (source, target) ->
